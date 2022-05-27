@@ -25,7 +25,7 @@ const Body = () => {
           <Carousel.Item>
             <div className='carousel-1 row d-flex justify-content-center align-items-center'>
               <div className='col-10 col-md-7 mb-4'>
-               <h1 className='bold' style={{color: "red", fontSize: "50px"}}>Your Bike One Stop</h1>
+               <h1 className='bold zzz' style={{color: "red", fontSize: "50px"}}>Your Bike One Stop</h1>
                <h6 className='bold' style={{color: "white", fontSize: "20px"}}>Shop all bike parts</h6>
                <button className='mt-4 p-2 bold' style={{backgroundColor: 'red',width: "130px", color: "white" ,border: "none", borderRadius: "10px"}}>Shop Now</button>
               </div>
@@ -147,7 +147,7 @@ const Body = () => {
             <div className='col-10'>
               <div className='row '>
                 <h5 className='col bold d-flex justify-content-start'>Top Selling Products</h5>
-                <button className='col-1 bold text-center view-all'>View All</button>
+                <button className='col-2 bold text-center view-all' style={{width: "100px"}}>View All</button>
               </div>
             </div>
           </div>
@@ -235,7 +235,7 @@ const Body = () => {
             <div className='col-10'>
               <div className='row '>
                 <h5 className='col bold d-flex justify-content-start'>Top Sellers</h5>
-                <button className='col-1 bold text-center view-all'>View All</button>
+                <button className='col-1 bold text-center view-all' style={{width: "100px"}}>View All</button>
               </div>
             </div>
           </div>
@@ -254,7 +254,7 @@ const Body = () => {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                   </div>
                   <div className="row bd-highlight">
-                    <i class="col-1 bi bi-geo-alt"></i>
+                    <i class="col-2 bi bi-geo-alt"></i>
                     <p className='col' >Gulberg, Lahore</p>
                   </div>
                   <div className="bd-highlight">
@@ -273,7 +273,7 @@ const Body = () => {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                   </div>
                   <div className="row bd-highlight">
-                    <i class="col-1 bi bi-geo-alt"></i>
+                    <i class="col-2 bi bi-geo-alt"></i>
                     <p className='col' >Gulberg, Lahore</p>
                   </div>
                   <div className="bd-highlight">
@@ -292,7 +292,7 @@ const Body = () => {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                   </div>
                   <div className="row bd-highlight">
-                    <i class="col-1 bi bi-geo-alt"></i>
+                    <i class="col-2 bi bi-geo-alt"></i>
                     <p className='col' >Gulberg, Lahore</p>
                   </div>
                   <div className="bd-highlight">
@@ -311,7 +311,7 @@ const Body = () => {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                   </div>
                   <div className="row bd-highlight">
-                    <i class="col-1 bi bi-geo-alt"></i>
+                    <i class="col-2 bi bi-geo-alt"></i>
                     <p className='col' >Gulberg, Lahore</p>
                   </div>
                   <div className="bd-highlight">
@@ -328,7 +328,7 @@ const Body = () => {
             <div className='col-10'>
               <div className='row '>
                 <h5 className='col bold d-flex justify-content-start'>Top Selling Products</h5>
-                <button className='col-1 bold text-center view-all'>View All</button>
+                <button className='col-1 bold text-center view-all' style={{width: "100px"}}>View All</button>
               </div>
             </div>
           </div>

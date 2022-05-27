@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  /* max-width: 100vh; */
   /* background-color: rgb(68, 28, 105); */
 }
 .bold{
@@ -26,7 +27,7 @@
 .carousel-1,.carousel-2, .carousel-3{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/carousel-1.jpg);
-    background-size: cover;
+  background-size: cover;
   background-position: center;
   height: 100vh;
 }
@@ -76,6 +77,22 @@ footer{
   width: 50px;
   margin-right: 10px;
 }
+
+
+@media screen and (max-width: 768px){
+  .section-6 img{
+    width: 65px;
+  }
+  .zzz{
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
 .row {
   --bs-gutter-x: rem;
 }
