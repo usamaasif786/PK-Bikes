@@ -25,27 +25,27 @@ const Body = () => {
           <Carousel.Item>
             <div className='carousel-1 row d-flex justify-content-center align-items-center'>
               <div className='col-10 col-md-7 mb-4'>
-               <h1 className='bold zzz' style={{color: "red", fontSize: "50px"}}>Your Bike One Stop</h1>
+               <h1 className='bold section-1-h1' style={{color: "red"}}>Your Bike One Stop</h1>
                <h6 className='bold' style={{color: "white", fontSize: "20px"}}>Shop all bike parts</h6>
-               <button className='mt-4 p-2 bold' style={{backgroundColor: 'red',width: "130px", color: "white" ,border: "none", borderRadius: "10px"}}>Shop Now</button>
+               <button className='mt-4 p-2 bold section-1-btn'>Shop Now</button>
               </div>
             </div>
           </Carousel.Item>
           <Carousel.Item >
             <div className='carousel-2 row d-flex justify-content-center align-items-center'>
               <div className='col-10 col-md-7 mb-4'>
-               <h1 className='bold' style={{color: "red", fontSize: "50px"}}>Your Bike One Stop</h1>
+               <h1 className='bold section-1-h1' style={{color: "red"}}>Your Bike One Stop</h1>
                <h6 className='bold' style={{color: "white", fontSize: "20px"}}>Shop all bike parts</h6>
-               <button className='mt-4 p-2 bold' style={{backgroundColor: 'red',width: "130px", color: "white" ,border: "none", borderRadius: "10px"}}>Shop Now</button>
+               <button className='mt-4 p-2 bold section-1-btn'>Shop Now</button>
               </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className='carousel-3 row d-flex justify-content-center align-items-center'>
               <div className='col-10 col-md-7 mb-4'>
-               <h1 className='bold' style={{color: "red", fontSize: "50px"}}>Your Bike One Stop</h1>
+               <h1 className='bold section-1-h1' style={{color: "red"}}>Your Bike One Stop</h1>
                <h6 className='bold' style={{color: "white", fontSize: "20px"}}>Shop all bike parts</h6>
-               <button className='mt-4 p-2 bold' style={{backgroundColor: 'red',width: "130px", color: "white" ,border: "none", borderRadius: "10px"}}>Shop Now</button>
+               <button className='mt-4 p-2 bold section-1-btn'>Shop Now</button>
               </div>
             </div>
           </Carousel.Item>

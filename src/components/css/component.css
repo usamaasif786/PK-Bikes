@@ -2,8 +2,6 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  /* max-width: 100vh; */
-  /* background-color: rgb(68, 28, 105); */
 }
 .bold{
   font-weight: bold;
@@ -18,11 +16,10 @@
 .nav-item{
   font-size: 18px;
 }
-.footer-icon i{
+.header-icon i{
   font-size: 20px;
   margin: 0px 15px 0px 15px;
 }
-
 /* /////// Body   ///// */
 .carousel-1,.carousel-2, .carousel-3{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -38,6 +35,16 @@
 .carousel-3{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url(../images/carousel-3.jpg);
+}
+.section-1-h1{
+  font-size: 50px;
+}
+.section-1-btn{
+  background-color: red;
+  width: 130px;
+  color: white;
+  border: none;
+  border-radius: 10px
 }
 .special-img{
   margin-bottom: -67px;
@@ -66,7 +73,6 @@
   border-radius: 10px;
 }
 /* /////// Footer  ///// */
-
 .footer-heading{
   color: red;
 }
@@ -77,22 +83,15 @@ footer{
   width: 50px;
   margin-right: 10px;
 }
-
-
+/* /////// Media ////// */
 @media screen and (max-width: 768px){
   .section-6 img{
     width: 65px;
   }
-  .zzz{
-    font-size: 20px;
+  .section-1-h1{
+    font-size: 35px;
   }
 }
-
-
-
-
-
-
 .row {
   --bs-gutter-x: rem;
 }

@@ -12,7 +12,7 @@ const Header = () => {
               <div className='col-6 d-flex align-items-center'>
                 <input style={{backgroundColor: "lightGray", width: "80%"}} class="form-control" type="text" placeholder="Search Products, categories ..."/>
               </div>
-              <div className='col-2 d-flex align-items-center footer-icon'>
+              <div className='col-2 d-flex align-items-center header-icon'>
                 <i class="bi bi-suit-heart"></i>
                 <i class="bi bi-basket3"></i>
                 <i class="bi bi-menu-button-wide"></i>
