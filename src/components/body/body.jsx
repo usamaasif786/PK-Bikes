@@ -63,7 +63,7 @@ const Body = () => {
                   <p>Accessories</p>
                   <p>Break System</p>
                   <p>Engine</p>
-                  <button className='p-3 mt-4 d-flex align-items-center bold' style={{height: "40px",backgroundColor: "white" ,border: "2px solid red", borderRadius: "10px"}}>View All Products</button>
+                  <button className='p-2 mt-4 d-flex align-items-center bold' style={{height: "auto",backgroundColor: "white" ,border: "2px solid red", borderRadius: "10px"}}>View All Products</button>
                 </div>
                 <div className="col-12 col-md m-2 p-4 bd-highlight bg-white b-radius">
                   <div className=" mb-auto  bd-highlight">
