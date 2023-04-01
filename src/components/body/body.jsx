@@ -1,37 +1,20 @@
 // import React from 'react';
-import React, {useState} from 'react'
-import Carousel_1 from '../images/carousel-1.jpg'
-import Carousel_2 from '../images/carousel-2.jpg'
-import Carousel_3 from '../images/carousel-3.jpg'
-import Carousel_4 from '../images/carousel-4.jpg'
-import {top_selling_product, top_sellers, p_images, company_owner, main_carousel} from './objects' 
-import bmw from "../images/bmw.png"
+import React from 'react'
+import Header from '../header/header';
+import CarouselSection from "./section-1";
+import Section_2 from './section-2'
+import Section_3 from './section-3'
+import Section_4 from './section-4'
+import Section_5 from './section-5'
+import Section_6 from './section-6'
 import '../css/component.css'
 
-import { Carousel } from 'react-bootstrap'
 const Body = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
- 
-  const limitedDivs = top_sellers.slice(0, 3); /*(I want to show just 4 div at a time)*/
-
-  const [viewAll, setViewAll] = useState(false);
-
-  const divsToShow = viewAll ? top_sellers : limitedDivs;
-  const hiddenDivs = viewAll ? [] : top_sellers.slice(4);
-
-  function handleViewAllClick() {
-    setViewAll(true);
-  }
-  const toggleViewAll = () => setViewAll(!viewAll);
-
   return (
       <div>
 {/* ///////////// */}
-        <Carousel activeIndex={index} onSelect={handleSelect} className=''>
+        <CarouselSection />
+        {/* <Carousel activeIndex={index} onSelect={handleSelect} className=''>
           {main_carousel?.map(item => (
             <Carousel.Item>
               <div className='carousel-1 row d-flex justify-content-center align-items-center' key={item.id} style={{backgroundImage: `url(${item.imageSrc})`}}>
@@ -43,27 +26,11 @@ const Body = () => {
               </div>
             </Carousel.Item>
           ))}
-          {/* <Carousel.Item >
-            <div className='carousel-2 row d-flex justify-content-center align-items-center'>
-              <div className='col-10 col-md-7 mb-4'>
-               <h1 className='bold section-1-h1' style={{color: "red"}}>Your Bike One Stop</h1>
-               <h6 className='bold' style={{color: "white", fontSize: "20px"}}>Shop all bike parts</h6>
-               <button className='mt-4 p-2 bold section-1-btn'>Shop Now</button>
-              </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className='carousel-3 row d-flex justify-content-center align-items-center'>
-              <div className='col-10 col-md-7 mb-4'>
-               <h1 className='bold section-1-h1' style={{color: "red"}}>Your Bike One Stop</h1>
-               <h6 className='bold' style={{color: "white", fontSize: "20px"}}>Shop all bike parts</h6>
-               <button className='mt-4 p-2 bold section-1-btn'>Shop Now</button>
-              </div>
-            </div>
-          </Carousel.Item> */}
-        </Carousel>
+        
+        </Carousel> */}
 {/* /////////////////// */}
-        <div className='section-2 p-4 bg-lightGray'>
+        <Section_2/>
+        {/* <div className='section-2 p-4 bg-lightGray'>
           <div className='row d-flex justify-content-center'>
             <div className='col-11'>
               <div className='row justify'>
@@ -152,9 +119,10 @@ const Body = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 {/* /////////////////////// */}
-        <div className='section-3 mt-4 p-4'>
+        <Section_3/>
+        {/* <div className='section-3 mt-4 p-4'>
           <div className='row d-flex justify-content-center'>
             <div className='col-10'>
               <div className='row '>
@@ -188,9 +156,10 @@ const Body = () => {
               </div>
             </div>  
           </div>
-        </div>
+        </div> */}
 {/* /////////////////////// */}
-        <div className='section-4  p-4 bg-lightGray'>
+        <Section_4/>
+        {/* <div className='section-4  p-4 bg-lightGray'>
           <div className='row mt-2 mb-2 d-flex justify-content-center'>
             <div className='col-10'>
               <div className='row '>
@@ -208,7 +177,6 @@ const Body = () => {
           <div className='row  p-2 d-flex justify-content-center'>
             <div className='col-11 col-md-11'>
               <div className='row justify '>
-              {/* d-flex justify-content-around */}
                 {divsToShow.map(item => (
                   <div className=" col-sm-3 m-4 p-4 bd-highlight bg-white b-radius">
                     <div className=" mb-auto  bd-highlight">
@@ -257,14 +225,14 @@ const Body = () => {
               </div>
             </div>  
           </div>
-        </div>
+        </div> */}
 {/* /////////////////////// */}
-        <div className='section-5'>
+        <Section_5/>
+        {/* <div className='section-5'>
           <div className='row mt-4 mb-4 d-flex justify-content-center'>
             <div className='col-10'>
               <div className='row '>
                 <h5 className='col bold d-flex justify-content-start'>Company Owner's</h5>
-                {/* <button className='col-1 bold text-center view-all' style={{width: "100px"}}>View All</button> */}
               </div>
             </div>
           </div>
@@ -282,11 +250,11 @@ const Body = () => {
             </Carousel.Item>
             ))}
           </Carousel>
-        </div>
+        </div> */}
 {/* /////////////////////// */}
-        <hr />
-{/* /////////////////////// */}
-        <div className='section-6'>
+        <Section_6/>
+        {/* <div className='section-6'>
+          <hr />
           <div className='row p-3 d-flex align-items-center'>
             {p_images.map(item => (
               <div className='col'>
@@ -294,7 +262,7 @@ const Body = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     );
 }

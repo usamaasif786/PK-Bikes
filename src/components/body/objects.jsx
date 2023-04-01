@@ -15,6 +15,12 @@ export const main_carousel = [
   { id: 2, c_title: 'Bike Tyres', description: 'Shop All Bike Parts', imageSrc: Carousel_2},
   { id: 3, c_title: 'Car Tyres', description: 'Shop All Car Parts', imageSrc: Carousel_3},  
 ];
+// ac_title
+export const all_categories = [
+  { id: 1, ac_title: 'Bycycle Tyre', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 299.99, rating: 3},
+  { id: 2, ac_title: 'Bike Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 799.99, rating: 4},
+  { id: 3, ac_title: 'Car Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 199.99, rating: 2},  
+];
 
 // p_title (product title)
 export const top_selling_product = [
