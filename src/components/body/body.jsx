@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../header/header';
 import CarouselSection from "./section-1";
 import Section_2 from './section-2'
+import Random from './random';
 import Section_3 from './section-3'
 import Section_4 from './section-4'
 import Section_5 from './section-5'
@@ -29,7 +30,8 @@ const Body = () => {
         
         </Carousel> */}
 {/* /////////////////// */}
-        <Section_2/>
+        <Random/>
+        {/* <Section_2/> */}
         {/* <div className='section-2 p-4 bg-lightGray'>
           <div className='row d-flex justify-content-center'>
             <div className='col-11'>

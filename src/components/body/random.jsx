@@ -44,24 +44,86 @@ Rating.propTypes = {
   starSize: PropTypes.number.isRequired,
 };
 
+const Tires = ({ all_categories }) => (
+  <div className="row d-flex justify-content-between">
+    {all_categories.tireData.map((tire, index) => (
+      <div key={`tire_${index}`} className="col-12 col-md m-2 p-4 bd-highlight bg-white b-radius">
+        <div className=" mb-auto  bd-highlight">
+          <img className='img-fluid mb-4 b-radius' src={tire.imageSrc} alt="Picture" />
+        </div>
+        <div className="bd-highlight">
+          <h5>{tire.ac_title}</h5>
+        </div>
+        <div className="bd-highlight">
+          <p>{tire.description}</p>
+        </div>
+        <div className="bd-highlight">    
+          <Rating rating={tire.rating} starSize={30} />
+        </div>
+        <div className="bd-highlight">
+          <div className='row mt-4 d-flex align-items-center'>
+            <h5 className='col m-0'>{tire.price}</h5>
+            <button className='p-1 bold buy-now'>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
 
-const Section_2 = () => {
+const Oils = ({ all_categories }) => (
+  <div className="row d-flex justify-content-between">
+    {all_categories.oilData.map((oil, index) => (
+      <div key={`oil_${index}`} className="col-12 col-md m-2 p-4 bd-highlight bg-white b-radius">
+        <div className=" mb-auto  bd-highlight">
+          <img className='img-fluid mb-4 b-radius' src={oil.imageSrc} alt="Picture" />
+        </div>
+        <div className="bd-highlight">
+          <h5>{oil.ac_title}</h5>
+        </div>
+        <div className="bd-highlight">
+          <p>{oil.description}</p>
+        </div>
+        <div className="bd-highlight">    
+          <Rating rating={oil.rating} starSize={30} />
+        </div>
+        <div className="bd-highlight">
+          <div className='row mt-4 d-flex align-items-center'>
+            <h5 className='col m-0'>{oil.price}</h5>
+            <button className='p-1 bold buy-now'>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+const Random = () => {
+  const [activeTab, setActiveTab] = useState('tires');
+
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName);
+  };
   return (
     <div className='section-2 p-4 bg-lightGray'>
           <div className='row d-flex justify-content-center'>
             <div className='col-11'>
               <div className='row justify'>
-                <div className='col m-3 bold justify'>
+                <div className='col-2 m-3 bold justify'>
                   <h5 className='bold mb-4'>All Categories</h5>
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold">Tires</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold">Accessories</button> <br />
+                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('tires')}>Tires</button> <br />
+                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('oils')}>Accessories</button> <br />
                   <button type="button" class="btn btn-outline-dark m-1 fw-bold">Filters</button> <br />
                   <button type="button" class="btn btn-outline-dark m-1 fw-bold">Moter Oils</button> <br />
                   <button type="button" class="btn btn-outline-dark m-1 fw-bold">Break System</button> <br />
                   <button type="button" class="btn btn-outline-dark m-1 fw-bold">Engine</button>
                   <button className='p-2 mt-4 d-flex align-items-center bold' style={{height: "auto",backgroundColor: "white" ,border: "2px solid red", borderRadius: "10px"}}>View All Products</button>
                 </div>
-                {all_categories?.map((item) => (
+                <div className="col">
+                  {activeTab === 'tires' && <Tires all_categories={all_categories} />}
+                  {activeTab === 'oils' && <Oils all_categories={all_categories} />}
+                </div>
+                {/* {all_categories?.map((item) => (
                   <div className="col-12 col-md m-2 p-4 bd-highlight bg-white b-radius">
                     <div className=" mb-auto  bd-highlight">
                       <img className='img-fluid mb-4 b-radius' key={item.id} src={item.imageSrc} alt="Picture" />
@@ -82,7 +144,7 @@ const Section_2 = () => {
                       </div>
                     </div>
                   </div>
-                ))}
+                ))} */}
               </div>
             </div>
           </div>
@@ -90,4 +152,4 @@ const Section_2 = () => {
   );
 };
 
-export default Section_2;
+export default Random;
