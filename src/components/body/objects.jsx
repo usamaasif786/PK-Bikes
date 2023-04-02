@@ -19,20 +19,33 @@ export const main_carousel = [
 export const all_categories = {
   tireData: [
     { id: 1, ac_title: 'Bycycle Tyre', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 299.99, rating: 3},
-    { id: 2, ac_title: 'Bike Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 799.99, rating: 4},
-    { id: 3, ac_title: 'Car Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 199.99, rating: 2}, 
+    { id: 2, ac_title: 'Bike Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 799.99, rating: 5},
+    { id: 3, ac_title: 'Car Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 99.99, rating: 2}, 
   ],
-  oilData: [
-    { id: 1, ac_title: 'Bycycle Tyre', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 299.99, rating: 3},
-    { id: 2, ac_title: 'Bike Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 799.99, rating: 4},
-    { id: 3, ac_title: 'Car Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 199.99, rating: 2}, 
+  accessoriesData: [
+    { id: 1, ac_title: 'Bycycle Accessories', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 2299.99, rating: 3},
+    { id: 2, ac_title: 'Bike Accessories', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 7499.99, rating: 5},
+    { id: 3, ac_title: 'Car Accessories', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 199.99, rating: 1}, 
+  ],
+  filtersData: [
+    { id: 1, ac_title: 'Bycycle Filters', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 299.99, rating: 2},
+    { id: 2, ac_title: 'Bike Filters', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 8799.99, rating: 4},
+    { id: 3, ac_title: 'Car Filters', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 299.99, rating: 1}, 
+  ],
+  motoroilData: [
+    { id: 1, ac_title: 'Truck Oil', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 9999.99, rating: 5},
+    { id: 2, ac_title: 'Bike Oil', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 2199.99, rating: 4},
+  ],
+  breaksystemData: [
+    { id: 1, ac_title: 'Bycycle Break System', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 99.99, rating: 5},
+    { id: 2, ac_title: 'Bike Break System', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 799.99, rating: 2},
+    { id: 3, ac_title: 'Car Break System', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 1199.99, rating: 2}, 
+  ],
+  engineData: [
+    { id: 2, ac_title: 'Bike Engine', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 699.99, rating: 5},
+    { id: 3, ac_title: 'Car Engine', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 1299.99, rating: 5}, 
   ],
 };
-// export const all_categories = [
-//   { id: 1, ac_title: 'Bycycle Tyre', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 299.99, rating: 3},
-//   { id: 2, ac_title: 'Bike Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 799.99, rating: 4},
-//   { id: 3, ac_title: 'Car Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 199.99, rating: 2},  
-// ];
 
 // p_title (product title)
 export const top_selling_product = [

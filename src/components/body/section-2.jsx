@@ -44,45 +44,230 @@ Rating.propTypes = {
   starSize: PropTypes.number.isRequired,
 };
 
+const Tires = ({ all_categories }) => (
+  <div className="row d-flex justify-content-start">
+    {all_categories.tireData.map((tire, index) => (
+      <div key={`tire_${index}`} className="col-12 col-md-3 m-4 p-3 bd-highlight bg-white b-radius">
+        <div className=" mb-auto  bd-highlight">
+          <img className='img-fluid mb-4 b-radius' src={tire.imageSrc} alt="Picture" />
+        </div>
+        <div className="bd-highlight">
+          <h5>{tire.ac_title}</h5>
+        </div>
+        <div className="bd-highlight">
+          <p>{tire.description}</p>
+        </div>
+        <div className="bd-highlight">    
+          <Rating rating={tire.rating} starSize={30} />
+        </div>
+        <div className="bd-highlight">
+          <div className='row mt-4 d-flex align-items-center'>
+            <h5 className='col m-0'>{tire.price}</h5>
+            <button className='p-1 bold buy-now'>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+const Accessories = ({ all_categories }) => (
+  <div className="row d-flex justify-content-start">
+    {all_categories.accessoriesData.map((accessories, index) => (
+      <div key={`accessories_${index}`} className="col-12 col-md-3 m-4 p-3 bd-highlight bg-white b-radius">
+        <div className=" mb-auto  bd-highlight">
+          <img className='img-fluid mb-4 b-radius' src={accessories.imageSrc} alt="Picture" />
+        </div>
+        <div className="bd-highlight">
+          <h5>{accessories.ac_title}</h5>
+        </div>
+        <div className="bd-highlight">
+          <p>{accessories.description}</p>
+        </div>
+        <div className="bd-highlight">    
+          <Rating rating={accessories.rating} starSize={30} />
+        </div>
+        <div className="bd-highlight">
+          <div className='row mt-4 d-flex align-items-center'>
+            <h5 className='col m-0'>{accessories.price}</h5>
+            <button className='p-1 bold buy-now'>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+const Filters = ({ all_categories }) => (
+  <div className="row d-flex justify-content-start">
+    {all_categories.filtersData.map((filters, index) => (
+      <div key={`filters_${index}`} className="col-12 col-md-3 m-4 p-3 bd-highlight bg-white b-radius">
+        <div className=" mb-auto  bd-highlight">
+          <img className='img-fluid mb-4 b-radius' src={filters.imageSrc} alt="Picture" />
+        </div>
+        <div className="bd-highlight">
+          <h5>{filters.ac_title}</h5>
+        </div>
+        <div className="bd-highlight">
+          <p>{filters.description}</p>
+        </div>
+        <div className="bd-highlight">    
+          <Rating rating={filters.rating} starSize={30} />
+        </div>
+        <div className="bd-highlight">
+          <div className='row mt-4 d-flex align-items-center'>
+            <h5 className='col m-0'>{filters.price}</h5>
+            <button className='p-1 bold buy-now'>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+const MotorOil = ({ all_categories }) => (
+  <div className="row d-flex justify-content-start">
+    {all_categories.motoroilData.map((motoroil, index) => (
+      <div key={`oil_${index}`} className="col-12 col-md-3 m-4 p-3 bd-highlight bg-white b-radius">
+        <div className=" mb-auto  bd-highlight">
+          <img className='img-fluid mb-4 b-radius' src={motoroil.imageSrc} alt="Picture" />
+        </div>
+        <div className="bd-highlight">
+          <h5>{motoroil.ac_title}</h5>
+        </div>
+        <div className="bd-highlight">
+          <p>{motoroil.description}</p>
+        </div>
+        <div className="bd-highlight">    
+          <Rating rating={motoroil.rating} starSize={30} />
+        </div>
+        <div className="bd-highlight">
+          <div className='row mt-4 d-flex align-items-center'>
+            <h5 className='col m-0'>{motoroil.price}</h5>
+            <button className='p-1 bold buy-now'>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+const BreakSystem = ({ all_categories }) => (
+  <div className="row d-flex justify-content-start">
+    {all_categories.breaksystemData.map((breakSystem, index) => (
+      <div key={`breakSystem_${index}`} className="col-12 col-md-3 m-4 p-3 bd-highlight bg-white b-radius">
+        <div className=" mb-auto  bd-highlight">
+          <img className='img-fluid mb-4 b-radius' src={breakSystem.imageSrc} alt="Picture" />
+        </div>
+        <div className="bd-highlight">
+          <h5>{breakSystem.ac_title}</h5>
+        </div>
+        <div className="bd-highlight">
+          <p>{breakSystem.description}</p>
+        </div>
+        <div className="bd-highlight">    
+          <Rating rating={breakSystem.rating} starSize={30} />
+        </div>
+        <div className="bd-highlight">
+          <div className='row mt-4 d-flex align-items-center'>
+            <h5 className='col m-0'>{breakSystem.price}</h5>
+            <button className='p-1 bold buy-now'>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+const Engine = ({ all_categories }) => (
+  <div className="row d-flex justify-content-start">
+    {all_categories.engineData.map((engine, index) => (
+      <div key={`engine_${index}`} className="col-12 col-md-3 m-4 p-3 bd-highlight bg-white b-radius">
+        <div className=" mb-auto  bd-highlight">
+          <img className='img-fluid mb-4 b-radius' src={engine.imageSrc} alt="Picture" />
+        </div>
+        <div className="bd-highlight">
+          <h5>{engine.ac_title}</h5>
+        </div>
+        <div className="bd-highlight">
+          <p>{engine.description}</p>
+        </div>
+        <div className="bd-highlight">    
+          <Rating rating={engine.rating} starSize={30} />
+        </div>
+        <div className="bd-highlight">
+          <div className='row mt-4 d-flex align-items-center'>
+            <h5 className='col m-0'>{engine.price}</h5>
+            <button className='p-1 bold buy-now'>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+// const ProductList = ({ all_categories }) => (
+//   <div className="row d-flex justify-content-start">
+//     {all_categories.map((product, index) => (
+//       <div key={`product_${index}`} className="col-12 col-md-3 m-4 p-3 bd-highlight bg-white b-radius">
+//         <div className=" mb-auto  bd-highlight">
+//           <img className='img-fluid mb-4 b-radius' src={product.imageSrc} alt="Picture" />
+//         </div>
+//         <div className="bd-highlight">
+//           <h5>{product.ac_title}</h5>
+//         </div>
+//         <div className="bd-highlight">
+//           <p>{product.description}</p>
+//         </div>
+//         <div className="bd-highlight">    
+//           <Rating rating={product.rating} starSize={30} />
+//         </div>
+//         <div className="bd-highlight">
+//           <div className='row mt-4 d-flex align-items-center'>
+//             <h5 className='col m-0'>{product.price}</h5>
+//             <button className='p-1 bold buy-now'>Buy Now</button>
+//           </div>
+//         </div>
+//       </div>
+//     ))}
+//   </div>
+// );
+
 
 const Section_2 = () => {
+  const [activeTab, setActiveTab] = useState('tires');
+
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName);
+  };
   return (
     <div className='section-2 p-4 bg-lightGray'>
           <div className='row d-flex justify-content-center'>
             <div className='col-11'>
               <div className='row justify'>
-                <div className='col m-3 bold justify'>
+                <div className='col-2 m-4 bold justify'>
                   <h5 className='bold mb-4'>All Categories</h5>
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold">Tires</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold">Accessories</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold">Filters</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold">Moter Oils</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold">Break System</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold">Engine</button>
+                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('tires')}>Tires</button> <br />
+                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('accessories')}>Accessories</button> <br />
+                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('filters')}>Filters</button> <br />
+                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('motoroil')}>Moter Oils</button> <br />
+                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('breaksystem')}>Break System</button> <br />
+                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('engine')}>Engine</button>
                   <button className='p-2 mt-4 d-flex align-items-center bold' style={{height: "auto",backgroundColor: "white" ,border: "2px solid red", borderRadius: "10px"}}>View All Products</button>
                 </div>
-                {all_categories?.map((item) => (
-                  <div className="col-12 col-md m-2 p-4 bd-highlight bg-white b-radius">
-                    <div className=" mb-auto  bd-highlight">
-                      <img className='img-fluid mb-4 b-radius' key={item.id} src={item.imageSrc} alt="Picture" />
-                    </div>
-                    <div className="bd-highlight">
-                      <h5 key={item.id}>{item.ac_title}</h5>
-                    </div>
-                    <div className="bd-highlight">
-                      <p key={item.id}>{item.description}</p>
-                    </div>
-                    <div className="bd-highlight">    
-                      <Rating key={item.id} rating={item.rating} starSize={30} />
-                    </div>
-                    <div className="bd-highlight">
-                      <div className='row mt-4 d-flex align-items-center'>
-                        <h5 className='col m-0' key={item.id}>{item.price}</h5>
-                        <button className='p-1 bold buy-now'>Buy Now</button>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                <div className="col">
+                  {activeTab === 'tires' && <Tires all_categories={all_categories} />}
+                  {activeTab === 'accessories' && <Accessories all_categories={all_categories} />}
+                  {activeTab === 'filters' && <Filters all_categories={all_categories} />}  
+                  {activeTab === 'motoroil' && <MotorOil all_categories={all_categories} />}  
+                  {activeTab === 'breaksystem' && <BreakSystem all_categories={all_categories} />}  
+                  {activeTab === 'engine' && <Engine all_categories={all_categories} />}  
+
+                  {/* {activeTab === 'tires' && <ProductList all_categories={all_categories} />}
+                  {activeTab === 'oils' && <ProductList all_categories={all_categories} />}
+                {console.log(all_categories)} */}
+                
+                </div>
               </div>
             </div>
           </div>
