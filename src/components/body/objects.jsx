@@ -3,11 +3,40 @@ import Carousel_1 from '../images/carousel-1.jpg'
 import Carousel_2 from '../images/carousel-2.jpg'
 import Carousel_3 from '../images/carousel-3.jpg'
 import Carousel_4 from '../images/carousel-4.jpg'
+
+///////// Car Pics
 import honda from "../images/honda.png"
 import yamaha from "../images/yamaha.png"
 import suzuki from "../images/suzuki.png"
 import qingqi from "../images/qingqi.png"
 import bmw from "../images/bmw.png"
+
+////// Tire 
+import tire_2 from "../images/tire-2.png"
+import tire_3 from "../images/tire-3.png"
+
+////// Accessories
+import accessories_1 from "../images/accessories-1.png"
+import accessories_2 from "../images/accessories-2.png"
+import accessories_3 from "../images/accessories-3.png"
+
+////// Filter
+import filter_1 from "../images/filter-1.png"
+import filter_2 from "../images/filter-2.png"
+
+///////  Motor Oil 
+import motoroil_1 from "../images/motoroil-1.png"
+import motoroil_2 from "../images/motoroil-2.png"
+
+/////// Bike Brakes
+import bikebrakes_1 from "../images/bikebrakes-1.png"
+import bikebrakes_2 from "../images/bikebrakes-2.png"
+import bikebrakes_3 from "../images/bikebrakes-3.png"
+
+////// Engine
+import engine_1 from "../images/engine-1.png"
+import engine_2 from "../images/engine-2.png"
+
 
 // c_title (carousel title)
 export const main_carousel = [
@@ -18,32 +47,31 @@ export const main_carousel = [
 // ac_title
 export const all_categories = {
   tireData: [
-    { id: 1, ac_title: 'Bycycle Tyre', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 299.99, rating: 3},
-    { id: 2, ac_title: 'Bike Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 799.99, rating: 5},
-    { id: 3, ac_title: 'Car Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 99.99, rating: 2}, 
+    { id: 1, ac_title: 'Bycycle Tyre', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 299.99, rating: 3},
+    { id: 2, ac_title: 'Bike Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: tire_2, price: 799.99, rating: 5},
+    { id: 3, ac_title: 'Car Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: tire_3, price: 99.99, rating: 2}, 
   ],
   accessoriesData: [
-    { id: 1, ac_title: 'Bycycle Accessories', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 2299.99, rating: 3},
-    { id: 2, ac_title: 'Bike Accessories', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 7499.99, rating: 5},
-    { id: 3, ac_title: 'Car Accessories', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 199.99, rating: 1}, 
+    { id: 1, ac_title: 'Bycycle Accessories', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: accessories_1, price: 2299.99, rating: 3},
+    { id: 2, ac_title: 'Bike Accessories', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: accessories_2, price: 7499.99, rating: 5},
+    { id: 3, ac_title: 'Car Accessories', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: accessories_3, price: 199.99, rating: 1}, 
   ],
   filtersData: [
-    { id: 1, ac_title: 'Bycycle Filters', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 299.99, rating: 2},
-    { id: 2, ac_title: 'Bike Filters', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 8799.99, rating: 4},
-    { id: 3, ac_title: 'Car Filters', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 299.99, rating: 1}, 
+    { id: 1, ac_title: 'Bike Filters', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: filter_1, price: 299.99, rating: 2},
+    { id: 2, ac_title: 'Car Filters', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: filter_2, price: 8799.99, rating: 4},
   ],
   motoroilData: [
-    { id: 1, ac_title: 'Truck Oil', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 9999.99, rating: 5},
-    { id: 2, ac_title: 'Bike Oil', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 2199.99, rating: 4},
+    { id: 1, ac_title: 'Truck Oil', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: motoroil_1, price: 9999.99, rating: 5},
+    { id: 2, ac_title: 'Bike Oil', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: motoroil_2, price: 2199.99, rating: 4},
   ],
   breaksystemData: [
-    { id: 1, ac_title: 'Bycycle Break System', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_3, price: 99.99, rating: 5},
-    { id: 2, ac_title: 'Bike Break System', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 799.99, rating: 2},
-    { id: 3, ac_title: 'Car Break System', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 1199.99, rating: 2}, 
+    { id: 1, ac_title: 'Bycycle Break System', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: bikebrakes_1, price: 99.99, rating: 5},
+    { id: 2, ac_title: 'Bike Break System', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: bikebrakes_2, price: 799.99, rating: 2},
+    { id: 3, ac_title: 'Car Break System', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: bikebrakes_3, price: 1199.99, rating: 2}, 
   ],
   engineData: [
-    { id: 2, ac_title: 'Bike Engine', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_2, price: 699.99, rating: 5},
-    { id: 3, ac_title: 'Car Engine', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: Carousel_4, price: 1299.99, rating: 5}, 
+    { id: 2, ac_title: 'Bike Engine', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: engine_1, price: 699.99, rating: 5},
+    { id: 3, ac_title: 'Car Engine', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', imageSrc: engine_2, price: 1299.99, rating: 5}, 
   ],
 };
 

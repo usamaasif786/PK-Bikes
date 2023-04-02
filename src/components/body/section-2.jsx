@@ -206,32 +206,32 @@ const Engine = ({ all_categories }) => (
   </div>
 );
 
-// const ProductList = ({ all_categories }) => (
-//   <div className="row d-flex justify-content-start">
-//     {all_categories.map((product, index) => (
-//       <div key={`product_${index}`} className="col-12 col-md-3 m-4 p-3 bd-highlight bg-white b-radius">
-//         <div className=" mb-auto  bd-highlight">
-//           <img className='img-fluid mb-4 b-radius' src={product.imageSrc} alt="Picture" />
-//         </div>
-//         <div className="bd-highlight">
-//           <h5>{product.ac_title}</h5>
-//         </div>
-//         <div className="bd-highlight">
-//           <p>{product.description}</p>
-//         </div>
-//         <div className="bd-highlight">    
-//           <Rating rating={product.rating} starSize={30} />
-//         </div>
-//         <div className="bd-highlight">
-//           <div className='row mt-4 d-flex align-items-center'>
-//             <h5 className='col m-0'>{product.price}</h5>
-//             <button className='p-1 bold buy-now'>Buy Now</button>
-//           </div>
-//         </div>
-//       </div>
-//     ))}
-//   </div>
-// );
+const ProductList = ({ all_categories }) => (
+  <div className="row d-flex justify-content-start">
+    {all_categories.map((product, index) => (
+      <div key={`product_${index}`} className="col-12 col-md-3 m-4 p-3 bd-highlight bg-white b-radius">
+        <div className=" mb-auto  bd-highlight">
+          <img className='img-fluid mb-4 b-radius' src={product.imageSrc} alt="Picture" />
+        </div>
+        <div className="bd-highlight">
+          <h5>{product.ac_title}</h5>
+        </div>
+        <div className="bd-highlight">
+          <p>{product.description}</p>
+        </div>
+        <div className="bd-highlight">    
+          <Rating rating={product.rating} starSize={30} />
+        </div>
+        <div className="bd-highlight">
+          <div className='row mt-4 d-flex align-items-center'>
+            <h5 className='col m-0'>{product.price}</h5>
+            <button className='p-1 bold buy-now'>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
 
 
 const Section_2 = () => {
@@ -247,12 +247,12 @@ const Section_2 = () => {
               <div className='row justify'>
                 <div className='col-2 m-4 bold justify'>
                   <h5 className='bold mb-4'>All Categories</h5>
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('tires')}>Tires</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('accessories')}>Accessories</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('filters')}>Filters</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('motoroil')}>Moter Oils</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('breaksystem')}>Break System</button> <br />
-                  <button type="button" class="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('engine')}>Engine</button>
+                  <button type="button" className="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('tires')}>Tires</button> <br />
+                  <button type="button" className="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('accessories')}>Accessories</button> <br />
+                  <button type="button" className="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('filters')}>Filters</button> <br />
+                  <button type="button" className="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('motoroil')}>Moter Oils</button> <br />
+                  <button type="button" className="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('breaksystem')}>Break System</button> <br />
+                  <button type="button" className="btn btn-outline-dark m-1 fw-bold" onClick={() => handleTabClick('engine')}>Engine</button>
                   <button className='p-2 mt-4 d-flex align-items-center bold' style={{height: "auto",backgroundColor: "white" ,border: "2px solid red", borderRadius: "10px"}}>View All Products</button>
                 </div>
                 <div className="col">
@@ -263,9 +263,12 @@ const Section_2 = () => {
                   {activeTab === 'breaksystem' && <BreakSystem all_categories={all_categories} />}  
                   {activeTab === 'engine' && <Engine all_categories={all_categories} />}  
 
-                  {/* {activeTab === 'tires' && <ProductList all_categories={all_categories} />}
-                  {activeTab === 'oils' && <ProductList all_categories={all_categories} />}
-                {console.log(all_categories)} */}
+                  {/* {activeTab === 'tires' && <ProductList />}
+                  {activeTab === 'oils' && <ProductList />}
+                  {console.log(all_categories)}
+                
+                {console.log(ProductList())} */}
+
                 
                 </div>
               </div>

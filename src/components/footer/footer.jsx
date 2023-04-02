@@ -55,7 +55,7 @@ const Footer = () => {
         <div className='col-11'>
           <div className='row'>
             <div className='col-12 col-sm d-flex align-items-center'>
-              <p className='justify m-0' style={{fontWeight: '600',color: "gray"}}>Copyright © {(new Date()).getFullYear()} www.bikeshere.com</p>
+              <p className='justify m-0' style={{fontWeight: '600',color: "gray"}}>Copyright © {(new Date()).getFullYear()} www.pkbikes.com</p>
             </div>
             <div className='col-12 col-sm footer-img  d-flex justify-content-end'>
               <img className='img-fluid' src={amex} alt="pic" />
