@@ -81,6 +81,8 @@ export const top_selling_product = [
   { id: 2, p_title: 'Bike Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', price: 200.99, imageSrc: Carousel_2},
   { id: 3, p_title: 'Car Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', price: 3300.99, imageSrc: Carousel_3},
   { id: 4, p_title: 'Heavy vehicles Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', price: 999.99, imageSrc: Carousel_4},
+  { id: 5, p_title: 'Bike Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', price: 200.99, imageSrc: Carousel_2},
+  { id: 6, p_title: 'Car Tyres', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.', price: 3300.99, imageSrc: Carousel_3},
 ];
 
 // p_images (products images)

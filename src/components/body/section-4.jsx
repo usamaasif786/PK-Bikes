@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {top_sellers} from './objects' 
+
 const Section_4 = () => {
   const limitedDivs = top_sellers.slice(0, 3); /*(I want to show just 4 div at a time)*/
 
