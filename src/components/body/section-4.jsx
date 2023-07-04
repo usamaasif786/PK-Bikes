@@ -54,7 +54,7 @@ const Section4 = () => {
                   <img
                     className="img-fluid mb-4 b-radius"
                     src={item.imageSrc}
-                    alt="PK Bike Data-Pic"
+                    alt="PAK Bike Data-Pic"
                   />
                 </div>
                 <div className="bd-highlight">
@@ -83,7 +83,7 @@ const Section4 = () => {
                       <img
                         className="img-fluid mb-4 b-radius"
                         src={item.imageSrc}
-                        alt="PK Bike Data-Pic"
+                        alt="PAK Bike Data-Pic"
                       />
                     </div>
                     <div className="bd-highlight">

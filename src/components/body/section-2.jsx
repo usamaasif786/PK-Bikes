@@ -51,7 +51,7 @@ const Tires = ({ all_categories }) => (
           <img
             className="img-fluid mb-4 b-radius"
             src={tire.imageSrc}
-            alt="PK Bike Data-Pic"
+            alt="PAK Bike Data-Pic"
           />
         </div>
         <div className="bd-highlight">
@@ -85,7 +85,7 @@ const Accessories = ({ all_categories }) => (
           <img
             className="img-fluid mb-4 b-radius"
             src={accessories.imageSrc}
-            alt="PK Bike Data-Pic"
+            alt="PAK Bike Data-Pic"
           />
         </div>
         <div className="bd-highlight">
@@ -119,7 +119,7 @@ const Filters = ({ all_categories }) => (
           <img
             className="img-fluid mb-4 b-radius"
             src={filters.imageSrc}
-            alt="PK Bike Data-Pic"
+            alt="PAK Bike Data-Pic"
           />
         </div>
         <div className="bd-highlight">
@@ -153,7 +153,7 @@ const MotorOil = ({ all_categories }) => (
           <img
             className="img-fluid mb-4 b-radius"
             src={motoroil.imageSrc}
-            alt="PK Bike Data-Pic"
+            alt="PAK Bike Data-Pic"
           />
         </div>
         <div className="bd-highlight">
@@ -187,7 +187,7 @@ const BreakSystem = ({ all_categories }) => (
           <img
             className="img-fluid mb-4 b-radius"
             src={breakSystem.imageSrc}
-            alt="PK Bike Data-Pic"
+            alt="PAK Bike Data-Pic"
           />
         </div>
         <div className="bd-highlight">
@@ -221,7 +221,7 @@ const Engine = ({ all_categories }) => (
           <img
             className="img-fluid mb-4 b-radius"
             src={engine.imageSrc}
-            alt="PK Bike Data-Pic"
+            alt="PAK Bike Data-Pic"
           />
         </div>
         <div className="bd-highlight">
@@ -257,7 +257,7 @@ const Engine = ({ all_categories }) => (
 //           <img
 //             className="img-fluid mb-4 b-radius"
 //             src={product.imageSrc}
-//             alt="PK Bike Data-Pic"
+//             alt="PAK Bike Data-Pic"
 //           />
 //         </div>
 //         <div className="bd-highlight">

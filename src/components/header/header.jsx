@@ -5,7 +5,7 @@ const Header = () => {
     <header className="row p-3">
       <div className="d-flex align-items-center justify-content-center">
         <div className="col-2 d-flex align-items-center justify-content-center d-none d-lg-block">
-          <h3>PK-Bikes</h3>
+          <h3>PAK-Bikes</h3>
         </div>
         <div
           className="col-12 col-lg-10"

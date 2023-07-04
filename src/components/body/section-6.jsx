@@ -14,7 +14,7 @@ const Section6 = () => {
               className="img-fluid"
               width={100}
               src={item.imageSrc}
-              alt="PK Bike Data-Pic"
+              alt="PAK Bike Data-Pic"
             />
           </div>
         ))}
