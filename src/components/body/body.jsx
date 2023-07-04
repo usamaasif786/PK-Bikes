@@ -1,21 +1,20 @@
 // import React from 'react';
-import React from 'react'
-import Header from '../header/header';
+import React from "react";
+// import Header from '../header/header';
 import CarouselSection from "./section-1";
-// import Section_2 from './section-2'
-import Section_2 from './section-2';
-import Section_3 from './section-3'
-import Section_4 from './section-4'
-import Section_5 from './section-5'
-import Section_6 from './section-6'
-import '../css/component.css'
+import Section2 from "./section-2";
+import Section3 from "./section-3";
+import Section4 from "./section-4";
+import Section5 from "./section-5";
+import Section6 from "./section-6";
+import "../css/component.css";
 
 const Body = () => {
   return (
-      <div>
-{/* ///////////// */}
-        <CarouselSection />
-        {/* <Carousel activeIndex={index} onSelect={handleSelect} className=''>
+    <div>
+      {/* ///////////// */}
+      <CarouselSection />
+      {/* <Carousel activeIndex={index} onSelect={handleSelect} className=''>
           {main_carousel?.map(item => (
             <Carousel.Item>
               <div className='carousel-1 row d-flex justify-content-center align-items-center' key={item.id} style={{backgroundImage: `url(${item.imageSrc})`}}>
@@ -29,10 +28,10 @@ const Body = () => {
           ))}
         
         </Carousel> */}
-{/* /////////////////// */}
-        {/* <Random/> */}
-        <Section_2/>
-        {/* <div className='section-2 p-4 bg-lightGray'>
+      {/* /////////////////// */}
+      {/* <Random/> */}
+      <Section2 />
+      {/* <div className='section-2 p-4 bg-lightGray'>
           <div className='row d-flex justify-content-center'>
             <div className='col-11'>
               <div className='row justify'>
@@ -122,9 +121,9 @@ const Body = () => {
             </div>
           </div>
         </div> */}
-{/* /////////////////////// */}
-        <Section_3/>
-        {/* <div className='section-3 mt-4 p-4'>
+      {/* /////////////////////// */}
+      <Section3 />
+      {/* <div className='section-3 mt-4 p-4'>
           <div className='row d-flex justify-content-center'>
             <div className='col-10'>
               <div className='row '>
@@ -159,9 +158,9 @@ const Body = () => {
             </div>  
           </div>
         </div> */}
-{/* /////////////////////// */}
-        <Section_4/>
-        {/* <div className='section-4  p-4 bg-lightGray'>
+      {/* /////////////////////// */}
+      <Section4 />
+      {/* <div className='section-4  p-4 bg-lightGray'>
           <div className='row mt-2 mb-2 d-flex justify-content-center'>
             <div className='col-10'>
               <div className='row '>
@@ -228,9 +227,9 @@ const Body = () => {
             </div>  
           </div>
         </div> */}
-{/* /////////////////////// */}
-        <Section_5/>
-        {/* <div className='section-5'>
+      {/* /////////////////////// */}
+      <Section5 />
+      {/* <div className='section-5'>
           <div className='row mt-4 mb-4 d-flex justify-content-center'>
             <div className='col-10'>
               <div className='row '>
@@ -253,9 +252,9 @@ const Body = () => {
             ))}
           </Carousel>
         </div> */}
-{/* /////////////////////// */}
-        <Section_6/>
-        {/* <div className='section-6'>
+      {/* /////////////////////// */}
+      <Section6 />
+      {/* <div className='section-6'>
           <hr />
           <div className='row p-3 d-flex align-items-center'>
             {p_images.map(item => (
@@ -265,8 +264,8 @@ const Body = () => {
             ))}
           </div>
         </div> */}
-      </div>
-    );
-}
+    </div>
+  );
+};
 
 export default Body;
